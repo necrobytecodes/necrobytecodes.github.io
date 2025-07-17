@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Necrobyte Projects</title>
+  <base href="/projects/" />
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -35,7 +36,8 @@
       border-radius: 4px;
     }
 
-    .nav-left a:hover {
+    .nav-left a:hover,
+    .nav-left a.active {
       background-color: #ff4da6;
     }
 
@@ -56,63 +58,88 @@
       color: #5C6AC4;
     }
 
-    .active {
-      background-color: #151515;
-      padding: 6px 10px;
-      border-radius: 4px;
+    header {
+      padding: 40px 20px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 3rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ddd;
+      max-width: 600px;
+      margin: 0 auto;
     }
 
     .project-list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      padding: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      padding: 40px 60px 60px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     .project {
       background-color: #2c2c2c;
-      padding: 20px;
+      padding: 24px;
       border-radius: 12px;
-      transition: transform 0.2s ease;
       cursor: pointer;
       position: relative;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      box-shadow: 0 0 8px rgba(255, 105, 180, 0.2);
     }
 
     .project:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(255, 105, 180, 0.4);
     }
 
     .warning-icon {
       position: absolute;
-      top: 10px;
-      right: 10px;
-      font-size: 18px;
+      top: 12px;
+      right: 12px;
+      font-size: 20px;
       color: yellow;
     }
 
     .project[data-proprietary]:hover::after {
       content: "PROPRIETARY";
       position: absolute;
-      bottom: 10px;
-      right: 10px;
+      bottom: 12px;
+      right: 12px;
       background-color: yellow;
       color: black;
-      font-size: 12px;
-      padding: 3px 6px;
+      font-size: 13px;
+      padding: 4px 8px;
       border-radius: 6px;
+      font-weight: bold;
     }
 
-    section {
-      padding: 20px;
+    .project h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 1.5rem;
+      color: #ff69b4;
+    }
+
+    .project p {
+      margin: 0;
+      color: #ccc;
+      line-height: 1.4;
     }
   </style>
 </head>
 <body>
   <nav>
     <div class="nav-left">
-      <a href="/" class="active">Home</a>
-      <a href="/projects/">Projects</a>
-      <a href="/contact/">Contact</a>
+      <a href="../">Home</a>
+      <a href="#" class="active">Projects</a>
+      <a href="../contact/">Contact</a>
     </div>
     <div class="nav-right">
       <button id="loginBtn">Login</button>
@@ -120,40 +147,38 @@
     </div>
   </nav>
 
-  <section id="home">
-    <h1>Welcome to Necrobyte</h1>
-    <p>Explore my operating systems, games, and more.</p>
-  </section>
+  <header>
+    <h1>Necrobyte Projects</h1>
+    <p>Welcome to the project hub where I showcase my work — from operating systems and modular installers to creative game engines and experimental story universes.  
+       Dive into detailed descriptions, see what’s proprietary, and explore the code behind the scenes.</p>
+  </header>
 
-  <section id="projects" class="project-list">
-    <div class="project" onclick="location.href='https://necrobyte.github.io/lotus-os'" data-proprietary>
+  <section class="project-list">
+    <div class="project" onclick="window.location.href='https://necrobyte.github.io/lotus-os'" data-proprietary>
       <span class="warning-icon">⚠️</span>
       <h3>LotusOS</h3>
-      <p>Closed-source operating system.</p>
+      <p>LotusOS is a closed-source operating system designed for high performance and security.  
+         Featuring a custom kernel and a sleek UI, it’s built from the ground up with proprietary tech.</p>
     </div>
 
-    <div class="project" onclick="location.href='https://necrobyte.github.io/craftos'">
+    <div class="project" onclick="window.location.href='https://necrobyte.github.io/craftos'">
       <h3>CraftOS</h3>
-      <p>Open-source modular installer.</p>
+      <p>An open-source, modular installer system built for flexibility.  
+         Easily customize and install packages with CraftOS’s intuitive framework and powerful scripting support.</p>
     </div>
 
-    <div class="project" onclick="location.href='https://necrobyte.github.io/rift'">
+    <div class="project" onclick="window.location.href='https://necrobyte.github.io/rift'">
       <h3>Rift</h3>
-      <p>Experimental story-driven framework.</p>
+      <p>Rift is an expansive, experimental story universe featuring interconnected narratives, characters, and lore.  
+         Dive into a unique world designed for immersive storytelling and creative exploration.</p>
     </div>
 
-    <div class="project" onclick="location.href='https://necrobyte.github.io/godot-games'" data-proprietary>
+    <div class="project" onclick="window.location.href='https://necrobyte.github.io/godot-games'" data-proprietary>
       <span class="warning-icon">⚠️</span>
       <h3>Godot Games</h3>
-      <p>Games made in Godot, proprietary license.</p>
+      <p>A collection of proprietary games developed using the Godot engine.  
+         These games showcase a variety of genres and experimental gameplay mechanics.</p>
     </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>You can reach me at: <strong>your.email@example.com</strong></p>
   </section>
 </body>
 </html>
-
- 
