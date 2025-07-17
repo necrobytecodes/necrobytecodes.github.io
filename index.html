@@ -56,6 +56,12 @@
       color: #5C6AC4;
     }
 
+    .active {
+      background-color: #151515;
+      padding: 6px 10px;
+      border-radius: 4px;
+    }
+
     .project-list {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -104,7 +110,7 @@
 <body>
   <nav>
     <div class="nav-left">
-      <a href="/">Home</a>
+      <a href="/" class="active">Home</a>
       <a href="/projects/">Projects</a>
       <a href="/contact/">Contact</a>
     </div>
@@ -149,3 +155,4 @@
   </section>
 </body>
 </html>
+
