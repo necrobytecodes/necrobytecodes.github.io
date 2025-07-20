@@ -1,0 +1,60 @@
+/* --- Additional Button Styling --- */
+
+/* Style for the "Login" button to make it appear more like a primary action */
+#loginBtn {
+  background-color: white; /* White background */
+  color: #ff69b4; /* Hot pink text to match nav bar */
+  border: 2px solid #ff69b4; /* Hot pink border */
+  transition: background-color 0.2s, color 0.2s;
+}
+
+#loginBtn:hover {
+  background-color: #ff4da6; /* Darker pink on hover */
+  color: white; /* White text on hover */
+  border-color: #ff4da6;
+}
+
+/* Style for the "Sign Up" or "Register" button (assuming "Sign In" becomes this) */
+/* This will make it distinct from Login, perhaps a clear call to action */
+#signUpBtn { /* We'll change the ID from signInBtn to signUpBtn in HTML later */
+  background-color: #ff69b4; /* Hot pink background */
+  color: white; /* White text */
+  border: 2px solid #ff69b4; /* Hot pink border */
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+#signUpBtn:hover {
+  background-color: #ff4da6; /* Darker pink on hover */
+  border-color: #ff4da6;
+}
+
+/* Optional: General button reset/base styles if needed later */
+button {
+  font-family: Arial, sans-serif; /* Ensure consistent font for buttons */
+}
+
+/* --- Project Card Enhancements (Optional) --- */
+
+/* You already have good styling, but we can refine the proprietary badge */
+.project[data-proprietary]:hover::after {
+    /* Existing styles */
+    content: "PROPRIETARY";
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background-color: #ffeb3b; /* Slightly nicer yellow */
+    color: #333; /* Darker text for better contrast */
+    font-size: 12px; /* Slightly smaller for compactness */
+    padding: 3px 7px;
+    border-radius: 4px; /* Slightly less rounded */
+    font-weight: bold;
+    letter-spacing: 0.5px; /* Add a little spacing */
+    z-index: 10; /* Ensure it's on top */
+}
+
+/* --- General Enhancements (Optional) --- */
+
+/* Small adjustment to body padding for overall spacing */
+body {
+  padding-bottom: 50px; /* Add some space at the bottom of the page */
+}
