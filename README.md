@@ -3,7 +3,7 @@
 Welcome to **NecroByte** — a digital outpost for code, systems, and ideas that refuse to die.  
 This site is the official home of my personal projects, operating system concepts, tools, and experiments.
 
-> **URL:** [necrobyte.github.io](https://necrobytecodes.github.io)
+> **URL:** [necrobytecodes.github.io](https://necrobytecodes.github.io)
 
 ---
 
