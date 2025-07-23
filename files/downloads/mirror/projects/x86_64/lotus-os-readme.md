@@ -1,1 +1,1 @@
-
+well it looks like you found my readme in the mirrors well all i can say is shit you were not meant to find this but you did that is what im curious about if you have found this send me a mail with the subject 8e9382f8vF at sebastianrodli12@hotmail.com and yes this wont do anything to my buisness and stuff just curious how  found it.
