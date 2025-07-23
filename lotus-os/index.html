@@ -6,44 +6,64 @@
 <title>Lotus OS — Download & Info</title>
 <style>
   body {
-    margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #121212; color: #f0f0f0; line-height: 1.6;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212;
+    color: #f0f0f0;
+    line-height: 1.6;
   }
+
   header {
-    background: linear-gradient(135deg, #0f52ba, #184e8e);
-    color: white; padding: 3rem 1rem; text-align: center;
+    background: linear-gradient(135deg, #ff4081, #c2185b);
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
   }
+
   header h1 {
-    font-size: 3rem; margin-bottom: 0.2rem;
+    font-size: 3rem;
+    margin-bottom: 0.2rem;
   }
+
   header p {
-    font-size: 1.2rem; font-weight: 300;
+    font-size: 1.2rem;
+    font-weight: 300;
   }
+
   main {
-    max-width: 900px; margin: 2rem auto; padding: 0 1rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
   }
+
   section {
     margin-bottom: 2.5rem;
   }
+
   h2 {
-    border-bottom: 3px solid #0f52ba; padding-bottom: 0.3rem; margin-bottom: 1rem;
-    color: #0f52ba;
+    border-bottom: 3px solid #ff4081;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+    color: #ff4081;
   }
+
   .features ul {
-    list-style-type: disc; margin-left: 1.5rem;
+    list-style-type: disc;
+    margin-left: 1.5rem;
   }
+
   .downloads a {
-    display: inline-block; 
-    margin-right: 1rem; 
-    border-radius: 6px; 
-    font-weight: 600; 
+    display: inline-block;
+    margin-right: 1rem;
+    border-radius: 6px;
+    font-weight: 600;
     text-decoration: none;
-    box-shadow: 0 4px 8px rgba(15, 82, 186, 0.4); 
+    box-shadow: 0 4px 8px rgba(255, 64, 129, 0.4);
     transition: background 0.3s ease;
   }
-  /* Pink Download Button */
+
   .download-button {
-    background-color: #ff4081; /* bright pink */
+    background-color: #ff4081;
     color: white;
     padding: 0.75rem 1.5rem;
     border: none;
@@ -54,27 +74,41 @@
     box-shadow: 0 4px 8px rgba(255, 64, 129, 0.5);
     transition: background-color 0.3s ease;
   }
+
   .download-button:hover {
-    background-color: #e03570; /* darker pink on hover */
+    background-color: #e03570;
   }
-  /* For other download links */
+
   .downloads a:not(.download-button) {
-    background: #0f52ba;
+    background: #ff4081;
     color: white;
     padding: 0.75rem 1.5rem;
   }
+
   .downloads a:not(.download-button):hover {
-    background: #084c8d;
+    background: #c2185b;
   }
+
   .screenshots img {
-    max-width: 100%; border-radius: 8px; margin-bottom: 1rem;
-    box-shadow: 0 4px 12px rgba(15, 82, 186, 0.6);
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(255, 64, 129, 0.6);
   }
+
   footer {
-    text-align: center; color: #555; font-size: 0.9rem;
-    padding: 1rem; border-top: 1px solid #222; margin-top: 3rem;
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+    padding: 1rem;
+    border-top: 1px solid #222;
+    margin-top: 3rem;
   }
-  /* Responsive */
+
+  footer a {
+    color: #ff4081;
+  }
+
   @media (max-width: 600px) {
     header h1 {
       font-size: 2rem;
@@ -126,8 +160,8 @@
 
   <section class="screenshots">
     <h2>Screenshots</h2>
-    <img src="screenshot1.png" alt="Lotus OS Desktop" />
-    <img src="screenshot2.png" alt="Lotus OS File Manager" />
+    <img src="screenshot1.png" alt="Lotus OS desktop with dock and launcher visible" loading="lazy" />
+    <img src="screenshot2.png" alt="Lotus OS file manager in pink theme" loading="lazy" />
   </section>
 
   <section class="downloads">
@@ -143,16 +177,21 @@
   <section class="faq">
     <h2>FAQ</h2>
     <h3>How do I install Lotus OS?</h3>
-    <p>Download the ISO, create a bootable USB, and follow the installation guide on our documentation page.</p>
+    <p>
+      Download the ISO, create a bootable USB, and follow the
+      <a href="https://example.com/docs/install" style="color:#ff4081;">installation guide</a>.
+    </p>
 
     <h3>Is Lotus OS suitable for beginners?</h3>
-    <p>Lotus OS targets intermediate users familiar with Linux, but we provide detailed documentation and community support to help new users get started.</p>
+    <p>
+      Lotus OS targets intermediate users familiar with Linux, but we provide detailed documentation and community support to help new users get started.
+    </p>
   </section>
 </main>
 
 <footer>
-  &copy; 2025 NecroByteCodes — <a href="mailto:support@necrobyte.codes" style="color:#0f52ba;">Contact Support</a>
+  &copy; 2025 NecroByteCodes —
+  <a href="mailto:sebastianrodli12@gmail.com">Contact Support</a>
 </footer>
 </body>
 </html>
-
